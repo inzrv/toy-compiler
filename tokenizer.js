@@ -2,7 +2,7 @@ const LETTERS = /[a-z]/i;
 const WHITESPACE = /\s/;
 const DIGITS = /\d/;
 
-const isParenthesis = c => (c === '(' || c === ')' );
+const isParenthesis = c => (c === '(' || c === ')');
 const isLetter = c => LETTERS.test(c);
 const isWhitespace = c => WHITESPACE.test(c);
 const isDigit = c => DIGITS.test(c);
@@ -20,7 +20,7 @@ module.exports = function tokenizer(input) {
             current++;
             continue;
         }
-        
+
         if (isLetter(char)) {
             let name = '';
             while (LETTERS.test(char)) {
