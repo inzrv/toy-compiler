@@ -1,8 +1,8 @@
-const tokenizer = require('./tokenizer');
-const parser = require('./parser');
-const transformer = require('./transformer');
-const generator = require('./generator');
-const compiler = require('./compiler');
+const tokenizer = require('./compiler/tokenizer');
+const parser = require('./compiler/parser');
+const transformer = require('./compiler/transformer');
+const generator = require('./compiler/generator');
+const compiler = require('./compiler/compiler');
 const assert = require('assert');
 
 const input = '(f 1 (g 2 3))';
